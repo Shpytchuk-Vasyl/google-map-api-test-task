@@ -19,35 +19,6 @@ export type Item = {
   timestamp: string;
 };
 
-export const items: Item[] = [
-  {
-    id: "1",
-    name: "Marker 1",
-    location: {
-      lat: 40.7128,
-      lng: -74.006,
-    },
-    timestamp: new Date().toISOString(),
-  },
-  {
-    id: "w2",
-    name: "Marker 2",
-    location: {
-      lat: 37.7749,
-      lng: -122.4194,
-    },
-    timestamp: new Date().toISOString(),
-  },
-  {
-    id: "s",
-    name: "Marker 3",
-    location: {
-      lat: 34.0522,
-      lng: -118.2437,
-    },
-    timestamp: new Date().toISOString(),
-  },
-];
 
 export async function GET(request: Request): Promise<Response> {
   const col = collection(db, "markers");

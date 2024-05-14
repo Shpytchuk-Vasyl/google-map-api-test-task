@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useState } from "react";
+import React, { Suspense, useCallback, useState } from "react";
 import {
   GoogleMap,
   MarkerClustererF,
